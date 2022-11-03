@@ -1,0 +1,304 @@
+// 變數定義
+// 1.顏色
+$primary : #B82A06;
+$darkPrimary : #3C0C00;
+$secondary : #FFB3A4;
+$black : #000;
+$white : #fff;
+
+// 2.字體大小
+$font-xxl : 72px;
+$font-xl : 56px;
+$font-l : 42px;
+$font-m : 36px;
+$font-s : 30px;
+$font-xs : 24px;
+$font-xxs : 16px;
+
+@font-face {
+    font-family: "Cubic 11";
+    src: url("../fonts/ttf/Cubic_11_1.013_R.ttf")format("truetype"),
+        url("../fonts/web/Cubic_11_1.013_R.woff")format("woff");
+}
+
+body{
+    background: $black;
+    color: $white;
+    font-family: "Cubic 11";
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+p{
+    line-height: 1.5;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+h1,.h1{
+    font-size: $font-xxl;
+}
+
+h2,.h2{
+    font-size: $font-xl;
+}
+
+h3,.h3{
+    font-size: $font-l;
+}
+
+h4,.h4{
+    font-size: $font-m;
+}
+
+h5,.h5{
+    font-size: $font-s;
+}
+
+h6,.h6{
+    font-size: $font-xs;
+}
+
+h7,.h7{
+    font-size: $font-xxs;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    margin-bottom: 375px;
+    nav{
+        background: $primary;
+        padding: 10px 0;
+        margin-bottom: 24px;
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        h1{
+            margin-left: auto;
+            margin-right: 30px;
+            a{
+                background: url("../img/THE\ F2E.png") no-repeat;
+                width: 105px;
+                height: 16px;
+                text-indent: 101%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    li{
+        margin-right: 30px;
+        a{
+            color: $black;
+            &:hover{
+                color: $white;
+            }
+            &:active{
+                color: $secondary;
+            }
+        }
+    }
+    li:nth-of-type(4),
+    li:nth-of-type(5){
+        width: 104px;
+        background: $white;
+        padding: 10px 0;
+        margin-right: 10px;
+        // transition: all .5s;
+        position: relative;
+    }
+    li:nth-of-type(4) a,
+    li:nth-of-type(5) a{
+        color: $primary;
+        text-align: center;
+    }
+    li:nth-of-type(4):hover,
+    li:nth-of-type(5):hover{
+        top: 5px;
+        left: 5px;
+        box-shadow: 0px 0px 1px $darkPrimary, 0px -1px 1px $darkPrimary, -2px -1px 1px $darkPrimary, -1px -2px 1px $darkPrimary, -3px -2px 1px $darkPrimary, -2px -3px 1px $darkPrimary, -4px -3px 1px $darkPrimary, -3px -4px 1px $darkPrimary, -5px -4px 1px $darkPrimary, -4px -5px 1px $darkPrimary, -6px -5px 1px $darkPrimary;
+    }
+    li:nth-of-type(4):active,
+    li:nth-of-type(5):active{
+        box-shadow: none;
+        top: 0;
+        left: 0;
+        background: $darkPrimary;
+    }
+}
+@media (max-width:768px) {
+    header nav h1{
+        margin-left: 0;
+    }
+    .menu{
+        margin-left: auto;
+    }
+}
+
+.heroBanner{
+    max-width: 1048px;
+    margin: 0 auto;
+    padding: 0 25px;
+    .bannerTopText{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 113px;
+        font-size: $font-m;
+    }
+    .bannerText{
+        margin-top: 113px;
+        font-size: $font-l;
+        position: relative;
+        .textLogin{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        a{
+            color: $white;
+            &:hover,&.active{
+                color: $primary;
+                &::before{
+                    content: "";
+                    background: url("../img/戰車\(俯\)\ 1.png");
+                    width: 86px;
+                    height: 53px;
+                    position: absolute;
+                    left: -106px;
+                }
+            }
+        }
+    }
+    .textFooter{
+        margin-top: 339px;
+        text-align: center;
+        font-size: $font-m;
+    }
+}
+
+main{
+    .slogan{
+        width: 50%;
+        background: $primary;
+        margin-bottom: 234px;
+        padding: 70px 0;
+        position: relative;
+        .sloganTalk{
+            img{
+                width: 390px;
+                position: absolute;
+                top: -7%;
+                left: 57%;
+            }
+            p{
+                position: absolute;
+                top: -5%;
+                left: 69%;
+                z-index: 5;
+                color: $black;
+            }
+        }
+        
+        p{
+            position: absolute;
+            top: 47%;
+            right: -27%;
+            font-size: $font-m;
+        }
+    }
+    .sloganStart p{
+        font-size: $font-m;
+    }
+    .box{
+        width: 50%;
+        height: 570px;
+        background: $primary;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+      
+    .boxwrap-half{
+        width: 100%;
+        margin-bottom: 243px;
+    }
+    .boxwrap-half > div{
+        position: relative;
+    }
+    .boxwrap-full{
+        width: 100%;
+        margin-bottom: 243px;
+        .box{
+            margin-left: auto;
+        }
+    }
+    .boxwrap-full > div{
+        position: relative;
+    }
+    .animation-wrapper{
+        .talk1{
+            width: 390px;
+            position: absolute;
+            top: -7%;
+            left: 57%;
+        }
+        .talk2{
+            width: 356px;
+            position: absolute;
+            top: -7%;
+            left: -15%;
+        }
+    }
+    .animation-wrapper img{
+        width: 637px;
+        margin: 0 auto;
+    }
+    .box-2,.box-3{
+        align-items:flex-end
+    }
+    .slogan1{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 37%;
+    }
+    .slogan2{
+        position: absolute;
+        z-index: 2;
+        top: 62%;
+        left: 38%;
+    }
+    .slogan3{
+        position: absolute;
+        z-index: 2;
+        top: 68%;
+        left: 38%;
+    }
+    .slogan1-1{
+        color: #000;
+        position: absolute;
+        top: -5%;
+        left: 70%;
+    }
+    .slogan2-1{
+        color: #000;
+        position: absolute;
+        top: 5%;
+        left: -3%;
+    }
+}
