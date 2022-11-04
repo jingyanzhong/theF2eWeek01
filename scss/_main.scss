@@ -21,73 +21,101 @@ $font-xxs : 16px;
         url("../fonts/web/Cubic_11_1.013_R.woff")format("woff");
 }
 
-body{
+body {
     background: $black;
     color: $white;
     font-family: "Cubic 11";
 }
 
-img{
+img {
     display: block;
     width: 100%;
 }
 
-p{
+p {
     line-height: 1.5;
 }
 
-a{
+a {
     display: block;
     text-decoration: none;
 }
 
-h1,.h1{
+h1,
+.h1 {
     font-size: $font-xxl;
 }
 
-h2,.h2{
+h2,
+.h2 {
     font-size: $font-xl;
 }
 
-h3,.h3{
+h3,
+.h3 {
     font-size: $font-l;
 }
 
-h4,.h4{
+h4,
+.h4 {
     font-size: $font-m;
 }
 
-h5,.h5{
+h5,
+.h5 {
     font-size: $font-s;
 }
 
-h6,.h6{
+h6,
+.h6 {
     font-size: $font-xs;
 }
 
-h7,.h7{
+h7,
+.h7 {
     font-size: $font-xxs;
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
-header{
+
+.z-15 {
+    z-index: 15;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+header {
     margin-bottom: 375px;
-    nav{
+
+    nav {
         background: $primary;
         padding: 10px 0;
         margin-bottom: 24px;
-        .container{
+
+        .container {
             display: flex;
             align-items: center;
         }
-        h1{
+
+        h1 {
             margin-left: auto;
             margin-right: 30px;
-            a{
+
+            a {
                 background: url("../img/THE\ F2E.png") no-repeat;
                 width: 105px;
                 height: 16px;
@@ -98,23 +126,29 @@ header{
         }
     }
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
-    li{
+
+    li {
         margin-right: 30px;
-        a{
+
+        a {
             color: $black;
-            &:hover{
+
+            &:hover {
                 color: $white;
             }
-            &:active{
+
+            &:active {
                 color: $secondary;
             }
         }
     }
+
     li:nth-of-type(4),
-    li:nth-of-type(5){
+    li:nth-of-type(5) {
         width: 104px;
         background: $white;
         padding: 10px 0;
@@ -122,58 +156,70 @@ header{
         // transition: all .5s;
         position: relative;
     }
+
     li:nth-of-type(4) a,
-    li:nth-of-type(5) a{
+    li:nth-of-type(5) a {
         color: $primary;
         text-align: center;
     }
+
     li:nth-of-type(4):hover,
-    li:nth-of-type(5):hover{
+    li:nth-of-type(5):hover {
         top: 5px;
         left: 5px;
         box-shadow: 0px 0px 1px $darkPrimary, 0px -1px 1px $darkPrimary, -2px -1px 1px $darkPrimary, -1px -2px 1px $darkPrimary, -3px -2px 1px $darkPrimary, -2px -3px 1px $darkPrimary, -4px -3px 1px $darkPrimary, -3px -4px 1px $darkPrimary, -5px -4px 1px $darkPrimary, -4px -5px 1px $darkPrimary, -6px -5px 1px $darkPrimary;
     }
+
     li:nth-of-type(4):active,
-    li:nth-of-type(5):active{
+    li:nth-of-type(5):active {
         box-shadow: none;
         top: 0;
         left: 0;
         background: $darkPrimary;
     }
 }
+
 @media (max-width:768px) {
-    header nav h1{
+    header nav h1 {
         margin-left: 0;
     }
-    .menu{
+
+    .menu {
         margin-left: auto;
     }
 }
 
-.heroBanner{
+.heroBanner {
     max-width: 1048px;
     margin: 0 auto;
     padding: 0 25px;
-    .bannerTopText{
+
+    .bannerTopText {
         display: flex;
         justify-content: space-between;
         margin-bottom: 113px;
         font-size: $font-m;
     }
-    .bannerText{
+
+    .bannerText {
         margin-top: 113px;
         font-size: $font-l;
         position: relative;
-        .textLogin{
+
+        .textLogin {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
-        a{
+
+        a {
             color: $white;
-            &:hover,&.active{
+
+            &:hover,
+            &.active {
                 color: $primary;
-                &::before{
+
+                &::before {
                     content: "";
                     background: url("../img/戰車\(俯\)\ 1.png");
                     width: 86px;
@@ -184,47 +230,20 @@ header{
             }
         }
     }
-    .textFooter{
+
+    .textFooter {
         margin-top: 339px;
         text-align: center;
         font-size: $font-m;
     }
 }
 
-main{
-    .slogan{
-        width: 50%;
-        background: $primary;
-        margin-bottom: 234px;
-        padding: 70px 0;
-        position: relative;
-        .sloganTalk{
-            img{
-                width: 390px;
-                position: absolute;
-                top: -7%;
-                left: 57%;
-            }
-            p{
-                position: absolute;
-                top: -5%;
-                left: 69%;
-                z-index: 5;
-                color: $black;
-            }
-        }
-        
-        p{
-            position: absolute;
-            top: 47%;
-            right: -27%;
-            font-size: $font-m;
-        }
-    }
-    .sloganStart p{
+main {
+    .sloganStart p {
         font-size: $font-m;
     }
-    .box{
+
+    .box {
         width: 50%;
         height: 570px;
         background: $primary;
@@ -232,73 +251,445 @@ main{
         align-items: center;
         position: relative;
     }
-      
-    .boxwrap-half{
+
+    .boxwrap-half {
         width: 100%;
         margin-bottom: 243px;
     }
-    .boxwrap-half > div{
+
+    .boxwrap-half>div {
         position: relative;
     }
-    .boxwrap-full{
+
+    .boxwrap-full {
         width: 100%;
         margin-bottom: 243px;
-        .box{
+
+        .box {
             margin-left: auto;
         }
     }
-    .boxwrap-full > div{
+
+    .boxwrap-full>div {
         position: relative;
     }
-    .animation-wrapper{
-        .talk1{
+
+    .animation-wrapper {
+        .talk1 {
             width: 390px;
             position: absolute;
             top: -7%;
             left: 57%;
         }
-        .talk2{
+
+        .talk2 {
             width: 356px;
             position: absolute;
             top: -7%;
             left: -15%;
         }
     }
-    .animation-wrapper img{
+
+    .animation-wrapper img {
         width: 637px;
         margin: 0 auto;
     }
-    .box-2,.box-3{
-        align-items:flex-end
+
+    .box-2,
+    .box-3 {
+        align-items: flex-end
     }
-    .slogan1{
+
+    .slogan1 {
         position: absolute;
         z-index: 2;
         top: 50%;
         left: 37%;
     }
-    .slogan2{
+
+    .slogan2 {
         position: absolute;
         z-index: 2;
         top: 62%;
         left: 38%;
     }
-    .slogan3{
+
+    .slogan3 {
         position: absolute;
         z-index: 2;
         top: 68%;
         left: 38%;
     }
-    .slogan1-1{
+
+    .slogan1-1 {
         color: #000;
         position: absolute;
         top: -5%;
         left: 70%;
     }
-    .slogan2-1{
+
+    .slogan2-1 {
         color: #000;
         position: absolute;
         top: 5%;
         left: -3%;
+    }
+
+    // 互動式網頁設計區塊
+    .section2 {
+        height: 100vh;
+        position: relative;
+        margin-bottom: 500px;
+
+        .title {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+
+            h3 {
+                display: inline-block;
+                border: 3px solid $white;
+                padding: 40px 80px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .bg-1 {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .bg-2 {
+            position: absolute;
+            width: 70%;
+            bottom: 0;
+            right: 0;
+        }
+
+        .bg-3 {
+            position: absolute;
+            width: 80%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bg-4 {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .section2-bg {
+        position: relative;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        .box-bg {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(0deg, #CC4F36, #000000);
+        }
+    
+        .box-bg-2 {
+            background: linear-gradient(0deg, #FFB3A4, #CC4F36);
+        }
+    
+        .box-bg-3 {
+            background: #FFB3A4;
+        }
+    }
+
+
+    // 每周活動介紹
+    .section3 {
+        position: relative;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+
+        .carIcon {
+            position: absolute;
+            top: 63%;
+            left: 47%;
+            width: 207px;
+            z-index: 15;
+        }
+
+        .carLine {
+            position: absolute;
+            top: 71%;
+            right: 0;
+            width: 50%;
+            z-index: 14;
+            border-bottom: 3px dashed $white;
+        }
+
+        .gate {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gate-1 {
+            background: url(../img/week1\ 1.png) top left no-repeat #B82A06;
+
+            h3 {
+                color: $secondary;
+            }
+        }
+
+        .gate-2 {
+            background: url(../img/week2\ 1.png) top left no-repeat #76B9D6;
+
+            h3 {
+                color: #0061A1;
+            }
+        }
+
+        .gate-3 {
+            background: url(../img/week3\ 1.png) top left no-repeat #215400;
+
+            h3 {
+                color: #C7FFA3;
+            }
+        }
+
+        .gate-text {
+            text-align: center;
+
+            h4 {
+                margin-bottom: 48px;
+            }
+
+            p {
+                font-size: $font-m;
+
+                span {
+                    display: block;
+                }
+            }
+
+            a {
+                display: inline-block;
+                color: $primary;
+                font-size: $font-m;
+                background: $white;
+                padding: 10px 36px;
+                position: relative;
+
+                &:hover {
+                    top: 5px;
+                    left: 5px;
+                    box-shadow: 0px 0px 1px $secondary, 0px -1px 1px $secondary, -2px -1px 1px $secondary, -1px -2px 1px $secondary, -3px -2px 1px $secondary, -2px -3px 1px $secondary, -4px -3px 1px $secondary, -3px -4px 1px $secondary, -5px -4px 1px $secondary, -4px -5px 1px $secondary, -6px -5px 1px $secondary;
+                }
+
+                &:active {
+                    box-shadow: none;
+                    top: 0;
+                    left: 0;
+                    background: $darkPrimary;
+                }
+            }
+
+            .gate-icon {
+                width: 140px;
+                margin: 42px auto;
+            }
+        }
+    }
+
+    // 比賽說明區塊
+    .section5{
+        margin-top: 200px;
+        margin-bottom: 360px;
+        .section5-text{
+            margin: 60px 0;
+            text-align: center;
+            font-size: $font-xl;
+            span{
+                display: block;
+            }
+        }
+        img{
+            margin-bottom: 140px;
+        }
+        .contentText{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .container > p{
+                margin-bottom: 200px;
+            }
+            h4{
+                font-size: $font-xl;
+                color: $secondary;
+                margin-bottom: 24px;
+            }
+            p{
+                font-size: $font-m;
+            }
+            span{
+                display: block;
+                font-size: $font-xs;
+            }
+            li{
+                margin-bottom: 36px;
+            }
+            .red{
+                display: inline;
+                font-size: $font-m;
+                color: $primary;
+            }
+        }
+    }
+
+    .fqa{
+        margin-bottom: 200px;
+        h3{
+            color: $white;
+            background: $primary;
+            text-align: center;
+            padding: 35px;
+            font-size: $font-xl;
+            margin-bottom: 80px;
+        }
+        .fqa-option{
+            display: flex;
+            margin-bottom: 80px;
+            li{
+                width: 25%;
+                margin: 0 10px;
+                color: $primary;
+                background: $white;
+                padding: 20px;
+                text-align: center; font-size: $font-m;
+                &:hover,&.active{
+                    background: $darkPrimary;
+                    color: $primary;
+                }
+            }
+        }
+        .fqa-list{
+            li{
+                margin-bottom: 36px;
+                font-size: $font-xs;
+            }
+            .fqa-q{
+                color: $secondary;
+            }
+        }
+        .fqaBtn{
+            background: $white;
+            color: $primary;
+            padding: 24px;
+            text-align: center;
+            font-size: $font-m;
+            &:hover{
+                color: $primary;
+                background: $darkPrimary;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    main {
+        .box {
+            width: 100%;
+            height: 477px;
+        }
+
+        .animation-wrapper {
+            .talk1 {
+                width: 305px;
+                top: -3%;
+                left: 55%;
+            }
+
+            .talk2 {
+                width: 215px;
+                top: -15%;
+                left: 5%;
+            }
+        }
+
+        .animation-wrapper img {
+            width: 499px;
+        }
+
+        .slogan1,
+        .slogan2,
+        .slogan3 {
+            position: static;
+            margin-top: 90px;
+            text-align: center;
+        }
+
+        .slogan1-1 {
+            top: -2%;
+            left: 65%;
+        }
+
+        .slogan2-1 {
+            color: #000;
+            position: absolute;
+            top: -8%;
+            left: 10%;
+        }
+
+        .boxwrap-half,
+        .boxwrap-full {
+            margin-bottom: 90px;
+        }
+
+        .section2{
+            .title {
+                bottom: 0%;
+                h3 {
+                    font-size: $font-m;
+                    padding: 40px 40px;
+                }
+                p{
+                    font-size: $font-xxs;
+                }
+            }
+        }
+
+        .section3{
+            .carIcon {
+                top: 57%;
+                left: 43%;
+            }
+    
+            .carLine {
+                top: 64%;
+            }
+            .gate-1 {
+                background: url(../img/week1-mobile.png) center no-repeat #B82A06;
+            }
+    
+            .gate-2 {
+                background: url(../img/week2-mobile.png) center no-repeat #76B9D6;
+            }
+    
+            .gate-3 {
+                background: url(../img/week3-mobile.png) center no-repeat #215400;
+            }
+            .gate-text{
+                h3,h4{
+                    font-size: $font-m;
+                }
+                p{
+                    font-size: $font-xs;
+                }
+            }
+        }
     }
 }

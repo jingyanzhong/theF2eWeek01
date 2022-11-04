@@ -77,31 +77,38 @@ a {
   text-decoration: none;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 72px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 56px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 42px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 36px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 30px;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 24px;
 }
 
-h7, .h7 {
+h7,
+.h7 {
   font-size: 16px;
 }
 
@@ -109,6 +116,22 @@ h7, .h7 {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.z-15 {
+  z-index: 15;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 header {
@@ -228,32 +251,6 @@ header nav h1 a {
   font-size: 36px;
 }
 
-main .slogan {
-  width: 50%;
-  background: #B82A06;
-  margin-bottom: 234px;
-  padding: 70px 0;
-  position: relative;
-}
-main .slogan .sloganTalk img {
-  width: 390px;
-  position: absolute;
-  top: -7%;
-  left: 57%;
-}
-main .slogan .sloganTalk p {
-  position: absolute;
-  top: -5%;
-  left: 69%;
-  z-index: 5;
-  color: #000;
-}
-main .slogan p {
-  position: absolute;
-  top: 47%;
-  right: -27%;
-  font-size: 36px;
-}
 main .sloganStart p {
   font-size: 36px;
 }
@@ -298,7 +295,8 @@ main .animation-wrapper img {
   width: 637px;
   margin: 0 auto;
 }
-main .box-2, main .box-3 {
+main .box-2,
+main .box-3 {
   align-items: flex-end;
 }
 main .slogan1 {
@@ -330,4 +328,305 @@ main .slogan2-1 {
   position: absolute;
   top: 5%;
   left: -3%;
+}
+main .section2 {
+  height: 100vh;
+  position: relative;
+  margin-bottom: 500px;
+}
+main .section2 .title {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+main .section2 .title h3 {
+  display: inline-block;
+  border: 3px solid #fff;
+  padding: 40px 80px;
+  margin-bottom: 16px;
+}
+main .section2 .bg-1 {
+  position: absolute;
+  bottom: 0;
+}
+main .section2 .bg-2 {
+  position: absolute;
+  width: 70%;
+  bottom: 0;
+  right: 0;
+}
+main .section2 .bg-3 {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+}
+main .section2 .bg-4 {
+  position: absolute;
+  bottom: 0;
+}
+main .section2-bg {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+main .section2-bg .box-bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, #CC4F36, #000000);
+}
+main .section2-bg .box-bg-2 {
+  background: linear-gradient(0deg, #FFB3A4, #CC4F36);
+}
+main .section2-bg .box-bg-3 {
+  background: #FFB3A4;
+}
+main .section3 {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+main .section3 .carIcon {
+  position: absolute;
+  top: 63%;
+  left: 47%;
+  width: 207px;
+  z-index: 15;
+}
+main .section3 .carLine {
+  position: absolute;
+  top: 71%;
+  right: 0;
+  width: 50%;
+  z-index: 14;
+  border-bottom: 3px dashed #fff;
+}
+main .section3 .gate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section3 .gate-1 {
+  background: url(../img/week1\ 1.png) top left no-repeat #B82A06;
+}
+main .section3 .gate-1 h3 {
+  color: #FFB3A4;
+}
+main .section3 .gate-2 {
+  background: url(../img/week2\ 1.png) top left no-repeat #76B9D6;
+}
+main .section3 .gate-2 h3 {
+  color: #0061A1;
+}
+main .section3 .gate-3 {
+  background: url(../img/week3\ 1.png) top left no-repeat #215400;
+}
+main .section3 .gate-3 h3 {
+  color: #C7FFA3;
+}
+main .section3 .gate-text {
+  text-align: center;
+}
+main .section3 .gate-text h4 {
+  margin-bottom: 48px;
+}
+main .section3 .gate-text p {
+  font-size: 36px;
+}
+main .section3 .gate-text p span {
+  display: block;
+}
+main .section3 .gate-text a {
+  display: inline-block;
+  color: #B82A06;
+  font-size: 36px;
+  background: #fff;
+  padding: 10px 36px;
+  position: relative;
+}
+main .section3 .gate-text a:hover {
+  top: 5px;
+  left: 5px;
+  box-shadow: 0px 0px 1px #FFB3A4, 0px -1px 1px #FFB3A4, -2px -1px 1px #FFB3A4, -1px -2px 1px #FFB3A4, -3px -2px 1px #FFB3A4, -2px -3px 1px #FFB3A4, -4px -3px 1px #FFB3A4, -3px -4px 1px #FFB3A4, -5px -4px 1px #FFB3A4, -4px -5px 1px #FFB3A4, -6px -5px 1px #FFB3A4;
+}
+main .section3 .gate-text a:active {
+  box-shadow: none;
+  top: 0;
+  left: 0;
+  background: #3C0C00;
+}
+main .section3 .gate-text .gate-icon {
+  width: 140px;
+  margin: 42px auto;
+}
+main .section5 {
+  margin-top: 200px;
+  margin-bottom: 360px;
+}
+main .section5 .section5-text {
+  margin: 60px 0;
+  text-align: center;
+  font-size: 56px;
+}
+main .section5 .section5-text span {
+  display: block;
+}
+main .section5 img {
+  margin-bottom: 140px;
+}
+main .section5 .contentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .section5 .contentText .container > p {
+  margin-bottom: 200px;
+}
+main .section5 .contentText h4 {
+  font-size: 56px;
+  color: #FFB3A4;
+  margin-bottom: 24px;
+}
+main .section5 .contentText p {
+  font-size: 36px;
+}
+main .section5 .contentText span {
+  display: block;
+  font-size: 24px;
+}
+main .section5 .contentText li {
+  margin-bottom: 36px;
+}
+main .section5 .contentText .red {
+  display: inline;
+  font-size: 36px;
+  color: #B82A06;
+}
+main .fqa {
+  margin-bottom: 200px;
+}
+main .fqa h3 {
+  color: #fff;
+  background: #B82A06;
+  text-align: center;
+  padding: 35px;
+  font-size: 56px;
+  margin-bottom: 80px;
+}
+main .fqa .fqa-option {
+  display: flex;
+  margin-bottom: 80px;
+}
+main .fqa .fqa-option li {
+  width: 25%;
+  margin: 0 10px;
+  color: #B82A06;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+}
+main .fqa .fqa-option li:hover, main .fqa .fqa-option li.active {
+  background: #3C0C00;
+  color: #B82A06;
+}
+main .fqa .fqa-list li {
+  margin-bottom: 36px;
+  font-size: 24px;
+}
+main .fqa .fqa-list .fqa-q {
+  color: #FFB3A4;
+}
+main .fqa .fqaBtn {
+  background: #fff;
+  color: #B82A06;
+  padding: 24px;
+  text-align: center;
+  font-size: 36px;
+}
+main .fqa .fqaBtn:hover {
+  color: #B82A06;
+  background: #3C0C00;
+}
+
+@media (max-width: 768px) {
+  main .box {
+    width: 100%;
+    height: 477px;
+  }
+  main .animation-wrapper .talk1 {
+    width: 305px;
+    top: -3%;
+    left: 55%;
+  }
+  main .animation-wrapper .talk2 {
+    width: 215px;
+    top: -15%;
+    left: 5%;
+  }
+  main .animation-wrapper img {
+    width: 499px;
+  }
+  main .slogan1,
+main .slogan2,
+main .slogan3 {
+    position: static;
+    margin-top: 90px;
+    text-align: center;
+  }
+  main .slogan1-1 {
+    top: -2%;
+    left: 65%;
+  }
+  main .slogan2-1 {
+    color: #000;
+    position: absolute;
+    top: -8%;
+    left: 10%;
+  }
+  main .boxwrap-half,
+main .boxwrap-full {
+    margin-bottom: 90px;
+  }
+  main .section2 .title {
+    bottom: 0%;
+  }
+  main .section2 .title h3 {
+    font-size: 36px;
+    padding: 40px 40px;
+  }
+  main .section2 .title p {
+    font-size: 16px;
+  }
+  main .section3 .carIcon {
+    top: 57%;
+    left: 43%;
+  }
+  main .section3 .carLine {
+    top: 64%;
+  }
+  main .section3 .gate-1 {
+    background: url(../img/week1-mobile.png) center no-repeat #B82A06;
+  }
+  main .section3 .gate-2 {
+    background: url(../img/week2-mobile.png) center no-repeat #76B9D6;
+  }
+  main .section3 .gate-3 {
+    background: url(../img/week3-mobile.png) center no-repeat #215400;
+  }
+  main .section3 .gate-text h3, main .section3 .gate-text h4 {
+    font-size: 36px;
+  }
+  main .section3 .gate-text p {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=all.css.map */
