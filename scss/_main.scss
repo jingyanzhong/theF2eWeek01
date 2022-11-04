@@ -569,7 +569,8 @@ main {
                 color: $primary;
                 background: $white;
                 padding: 20px;
-                text-align: center; font-size: $font-m;
+                text-align: center; 
+                font-size: $font-m;
                 &:hover,&.active{
                     background: $darkPrimary;
                     color: $primary;
@@ -688,6 +689,36 @@ main {
                 }
                 p{
                     font-size: $font-xs;
+                }
+            }
+        }
+
+        .section5{
+            margin-bottom: 200px;
+            .section5-text{
+                font-size: $font-m;
+            }
+            .contentText{
+                .container > p{
+                    margin-bottom: 100px;
+                }
+                h4,p,span,li,.red{
+                    font-size: $font-xs;
+                }
+            }
+        }
+
+        .fqa{
+            h3,.fqaBtn{
+                font-size: $font-xs;
+            }
+            .fqa-option{
+                flex-wrap: wrap;
+                li{
+                    width: 47%;
+                    font-size: $font-xs;
+                    padding: 20px 0;
+                    margin-bottom: 16px;
                 }
             }
         }

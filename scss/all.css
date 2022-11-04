@@ -629,4 +629,28 @@ main .boxwrap-full {
   main .section3 .gate-text p {
     font-size: 24px;
   }
+  main .section5 {
+    margin-bottom: 200px;
+  }
+  main .section5 .section5-text {
+    font-size: 36px;
+  }
+  main .section5 .contentText .container > p {
+    margin-bottom: 100px;
+  }
+  main .section5 .contentText h4, main .section5 .contentText p, main .section5 .contentText span, main .section5 .contentText li, main .section5 .contentText .red {
+    font-size: 24px;
+  }
+  main .fqa h3, main .fqa .fqaBtn {
+    font-size: 24px;
+  }
+  main .fqa .fqa-option {
+    flex-wrap: wrap;
+  }
+  main .fqa .fqa-option li {
+    width: 47%;
+    font-size: 24px;
+    padding: 20px 0;
+    margin-bottom: 16px;
+  }
 }/*# sourceMappingURL=all.css.map */
