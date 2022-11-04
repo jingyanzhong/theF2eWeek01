@@ -27,6 +27,10 @@ body {
     font-family: "Cubic 11";
 }
 
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
 img {
     display: block;
     width: 100%;
@@ -97,6 +101,7 @@ h7,
 .z-0 {
     z-index: 0;
 }
+
 
 header {
     margin-bottom: 375px;
@@ -595,6 +600,49 @@ main {
             &:hover{
                 color: $primary;
                 background: $darkPrimary;
+            }
+        }
+    }
+    // 贊助商
+    .sponsor{
+        background: $primary;
+        padding: 115px 0;
+        position: relative;
+        overflow: hidden;
+        .sponsor-bg{
+            position: absolute;
+            top: 6%;
+            left: 0;
+        }
+        .loop{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        h3{
+            font-size: $font-xl;
+            margin-bottom: 50px;
+            text-align: center;
+            span{
+                color: #FFC612;
+            }
+        }
+        .mb-l{
+            margin-bottom: 150px;
+        }
+        .container{
+            position: relative;
+        }
+        .sponsorList{
+            display: flex;
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 10px;
+                width: 33.3333%;
+                min-height: 386px;
+                padding: 40px;
+                background: $white;
             }
         }
     }
