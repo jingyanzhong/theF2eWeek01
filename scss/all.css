@@ -243,11 +243,12 @@ header nav h1 a {
 }
 .heroBanner .bannerText a:hover::before, .heroBanner .bannerText a.active::before {
   content: "";
-  background: url("../img/戰車(俯) 1.png");
+  background: url("../img/戰車(俯).gif");
   width: 86px;
   height: 53px;
   position: absolute;
   left: -106px;
+  background-size: cover;
 }
 .heroBanner .textFooter {
   margin-top: 339px;
@@ -471,6 +472,34 @@ main .section3 .gate-text .gate-icon {
   width: 140px;
   margin: 42px auto;
 }
+main .section4 {
+  margin-top: 300px;
+}
+main .section4 h4 {
+  color: #FFB3A4;
+}
+main .section4 .step {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+main .section4 .step .step-title h4 {
+  font-size: 72px;
+}
+main .section4 .step .text {
+  font-size: 36px;
+}
+main .section4 .section4-icon {
+  position: relative;
+  width: 140px;
+  height: 229px;
+  margin-right: 36px;
+}
+main .section4 .section4-icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 main .section5 {
   margin-top: 200px;
   margin-bottom: 360px;
@@ -562,15 +591,28 @@ main .fqa .fqaBtn:hover {
   background: #3C0C00;
 }
 main .sponsor {
-  background: #B82A06;
   padding: 115px 0;
   position: relative;
   overflow: hidden;
 }
 main .sponsor .sponsor-bg {
+  background: #B82A06;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+main .sponsor .sponsor-diamond-s {
   position: absolute;
   top: 6%;
   left: 0;
+}
+main .sponsor .sponsor-diamond-b {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  z-index: 2;
 }
 main .sponsor .loop {
   display: flex;
@@ -675,6 +717,12 @@ main .boxwrap-full {
   main .section3 .gate-text p {
     font-size: 24px;
   }
+  main .section4 .step .step-title h4 {
+    font-size: 42px;
+  }
+  main .section4 .step .text {
+    font-size: 24px;
+  }
   main .section5 {
     margin-bottom: 200px;
   }
@@ -698,5 +746,8 @@ main .boxwrap-full {
     font-size: 24px;
     padding: 20px 0;
     margin-bottom: 16px;
+  }
+  main .sponsor .sponsorList li {
+    min-height: 200px;
   }
 }/*# sourceMappingURL=all.css.map */
